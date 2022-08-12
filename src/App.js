@@ -6,12 +6,12 @@ import {About} from './pages/About'
 import {Profile} from './pages/Profile'
 import {Alert} from './components/Alert'
 import {AlertState} from './context/alert/AlertState'
-import { GithubState } from './components/github/GithubState'
+import {GithubState} from './context/github/GithubState'
 
 function App() {
   return (
     <GithubState>
-      <AlertState >
+      <AlertState>
         <BrowserRouter>
           <Navbar/>
           <div className="container pt-4">
